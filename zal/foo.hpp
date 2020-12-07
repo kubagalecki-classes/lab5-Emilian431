@@ -8,5 +8,18 @@
 std::vector< char > foo(std::list< Human >& people)
 {
     // Twoja implementacja tutaj
-    return {};
+    std::vector<char> wektor;
+    for ( std::list<Human>::reverse_iterator it = people.rbegin(); it != people.rend(), ++it)
+    {
+      it ->birthday();
+      if ( it->isMonster() == true)
+      {
+        wektor.push_back('n');
+      }
+      else
+      {
+        wektor.push_back('y');
+      }
+    }
+    return {v};
 }
