@@ -9,7 +9,7 @@ std::vector< char > foo(std::list< Human >& people)
 {
     // Twoja implementacja tutaj
     std::vector<char> wektor;
-    for ( std::list<Human>::reverse_iterator it = people.rbegin(); it != people.rend(), ++it)
+    for ( std::list<Human>::reverse_iterator it = people.rbegin(); it != people.rend(); ++it)
     {
       it ->birthday();
       if ( it->isMonster() == true)
