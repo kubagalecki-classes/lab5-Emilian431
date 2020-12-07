@@ -21,5 +21,5 @@ std::vector< char > foo(std::list< Human >& people)
         wektor.push_back('y');
       }
     }
-    return {v};
+    return {wektor};
 }
